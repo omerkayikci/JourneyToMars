@@ -1,7 +1,7 @@
 ﻿namespace MarsRovers.Data.Core.Enums
 {
     /// <summary>
-    /// pusula yön numarası insanın bakış ve saat yönü baz alınarak numaralandırılmıştır.
+    /// Compass direction numbering is based on human gaze and clockwise direction.
     /// </summary>
     public enum CompassDirectionsType
     {

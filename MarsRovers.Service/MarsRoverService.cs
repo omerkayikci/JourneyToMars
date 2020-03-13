@@ -9,7 +9,7 @@ namespace MarsRovers.Service
     public class MarsRoverService : IRoverService
     {
         /// <summary>
-        /// Her 90 derecelik dönüş Kuzey baz alınarak düşünüldüğünde 1 adım olarak nitelendirildi.
+        /// 90 degrees, starting point north direction was determined and set as 1 step.
         /// </summary>
         private readonly int StepsDirectionNumber = 1;
         private readonly int StepsMovedNumber = 1;
@@ -34,7 +34,7 @@ namespace MarsRovers.Service
 
             return rover;
         }
-        #region  İlerleme yönü saat yönü baz alınarak düşünülmüşür. Yani sola dönüş eksi yön sağa dönüş artı yön olarak düşünülmüştür. ileri hareket yönünde ise Kuzey ve Doğu artı, Güney ve Batı eksi yön olarak düşünülmüştür.
+        #region left turn minus right turn is indicated as plus. It is thought as North and East plus, South and West minus in forward direction. Change of direction and progress are clockwise
         public CompassDirectionsType TurnLeft(CompassDirectionsType roverDirection)
         {
             return (roverDirection - StepsDirectionNumber) < CompassDirectionsType.N ? CompassDirectionsType.W : roverDirection - StepsDirectionNumber;
