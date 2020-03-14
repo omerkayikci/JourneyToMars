@@ -30,6 +30,9 @@ namespace MarsRovers.Test
             Assert.AreEqual(rover.RoverDirection, CompassDirectionsType.N);
         }
 
+        /// <summary>
+        /// Test method for surface area check
+        /// </summary>
         [TestMethod]
         public void SuitableSurfaceTest()
         {
@@ -39,6 +42,9 @@ namespace MarsRovers.Test
             Assert.IsTrue(result);
         }
 
+        /// <summary>
+        /// Test method for wrong surface area check
+        /// </summary>
         [TestMethod]
         public void SuitableSurfaceTest_Wrong()
         {
@@ -48,6 +54,9 @@ namespace MarsRovers.Test
             Assert.IsTrue(!result);
         }
 
+        /// <summary>
+        /// Test method for rover position check
+        /// </summary>
         [TestMethod]
         public void SuitableRoverPositionTest()
         {
@@ -57,6 +66,9 @@ namespace MarsRovers.Test
             Assert.IsTrue(result);
         }
 
+        /// <summary>
+        /// Test method for wrong rover position check
+        /// </summary>
         [TestMethod]
         public void SuitableRoverPosition_Wrong()
         {
