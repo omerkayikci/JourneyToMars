@@ -49,11 +49,25 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="MarsRoverTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarsRovers.Core.Common\MarsRovers.Core.Common.csproj">
+      <Project>{44ec7d21-59f8-4541-8026-153b90937f34}</Project>
+      <Name>MarsRovers.Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MarsRovers.Data.Core\MarsRovers.Data.Core.csproj">
+      <Project>{EBD15533-E5E9-42DE-8B14-49A6B74E0CFE}</Project>
+      <Name>MarsRovers.Data.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MarsRovers.Service\MarsRovers.Service.csproj">
+      <Project>{DA204C22-2676-421C-B4F3-42448D85526E}</Project>
+      <Name>MarsRovers.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
