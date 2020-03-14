@@ -15,11 +15,9 @@ namespace MarsRovers.Core.Common.Helpers
         /// <returns></returns>
         public static bool IsSuitableRoverInfo(this List<string> roverInfo)
         {
-            bool suitableRover = false;
-
             if (roverInfo.Count() != 3)
             {
-                return suitableRover;
+                return false;
             }
 
             int.TryParse(roverInfo[0], out int xCoordinate);
@@ -28,15 +26,10 @@ namespace MarsRovers.Core.Common.Helpers
 
             if (xCoordinate == 0 || yCoordinate == 0 || direction == 0)
             {
-                return suitableRover;
-            }
-            else
-            {
-                suitableRover = true;
+                return false;
             }
 
-
-            return suitableRover;
+            return true;
         }
     }
 }

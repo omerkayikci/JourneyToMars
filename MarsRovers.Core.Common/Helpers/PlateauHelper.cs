@@ -12,11 +12,9 @@ namespace MarsRovers.Core.Common.Helpers
         /// <returns></returns>
         public static bool IsSuitableSurface(this IEnumerable<string> surface)
         {
-            bool suitableSurface = false;
-
             if (surface.Count() != 2)
             {
-                return suitableSurface;
+                return false;
             }
 
             int.TryParse(surface.FirstOrDefault(), out int firstEdge);
@@ -24,14 +22,10 @@ namespace MarsRovers.Core.Common.Helpers
 
             if (firstEdge == 0 || secondEdge == 0)
             {
-                return suitableSurface;
-            }
-            else
-            {
-                suitableSurface = true;
+                return false;
             }
 
-            return suitableSurface;
+            return true;
         }
     }
 }

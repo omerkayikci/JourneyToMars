@@ -25,7 +25,7 @@ namespace MarsRovers.ManuallyCommands
         {
             Console.WriteLine("Manuel Input;");
             Console.WriteLine($"Enter the First Edge of the Plateau Surface(Sample Format:0x0):");
-            var plateauInfo = Console.ReadLine().Trim().Split('x').ToList();
+            var plateauInfo = Console.ReadLine()?.Trim().Split('x').ToList();
 
             if (!plateauInfo.IsSuitableSurface())
             {
@@ -37,7 +37,7 @@ namespace MarsRovers.ManuallyCommands
             _marsSurface = new MarsSurface(int.Parse(plateauInfo.FirstOrDefault()), int.Parse(plateauInfo.LastOrDefault()));
 
             Console.WriteLine($"Enter the Rover Position and Direction(Sample Format:1 3 N):");
-            var roverInfo = Console.ReadLine().Trim().Split(' ').ToList();
+            var roverInfo = Console.ReadLine()?.Trim().Split(' ').ToList();
 
             if (!roverInfo.IsSuitableRoverInfo())
             {
@@ -56,7 +56,7 @@ namespace MarsRovers.ManuallyCommands
             firstRover = _roverService.MoveCommands(firstRover, roverCommands);
 
             Console.WriteLine($"{Environment.NewLine}Manually entered Mars surface information;{Environment.NewLine}{_marsSurface.SurfaceFirstEdge}x{_marsSurface.SurfaceSecondEdge}{Environment.NewLine}");
-            Console.WriteLine($"Manually entered Rover position information;{Environment.NewLine}{_roverPosition.XCoordinate}x{_roverPosition.YCoordinate} {roverDirection.ToString()}{Environment.NewLine}");
+            Console.WriteLine($"Manually entered Rover position information;{Environment.NewLine}{_roverPosition.XCoordinate} {_roverPosition.YCoordinate} {roverDirection.ToString()}{Environment.NewLine}");
             Console.WriteLine($"Rover Output;{Environment.NewLine}{firstRover.ToRoverLastPosition()}");
 
             Console.ReadLine();

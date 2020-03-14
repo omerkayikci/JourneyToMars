@@ -48,16 +48,16 @@ namespace MarsRovers.Service
             switch (rover.RoverDirection)
             {
                 case CompassDirectionsType.N:
-                    rover.RoverPosition.YCoordinate = rover.RoverPosition.YCoordinate + StepsMovedNumber;
+                    rover.RoverPosition.YCoordinate += StepsMovedNumber;
                     break;
                 case CompassDirectionsType.E:
-                    rover.RoverPosition.XCoordinate = rover.RoverPosition.XCoordinate + StepsMovedNumber;
+                    rover.RoverPosition.XCoordinate += StepsMovedNumber;
                     break;
                 case CompassDirectionsType.S:
-                    rover.RoverPosition.YCoordinate = rover.RoverPosition.YCoordinate - StepsMovedNumber;
+                    rover.RoverPosition.YCoordinate -= StepsMovedNumber;
                     break;
                 case CompassDirectionsType.W:
-                    rover.RoverPosition.XCoordinate = rover.RoverPosition.XCoordinate - StepsMovedNumber;
+                    rover.RoverPosition.XCoordinate -= StepsMovedNumber;
                     break;
             }
 
