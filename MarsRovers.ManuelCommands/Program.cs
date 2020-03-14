@@ -7,7 +7,7 @@ using MarsRovers.Service;
 using System;
 using System.Linq;
 
-namespace MarsRovers.ManuelCommands
+namespace MarsRovers.ManuallyCommands
 {
     public static class Program
     {
