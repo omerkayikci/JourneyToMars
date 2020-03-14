@@ -1,6 +1,6 @@
 ﻿using MarsRovers.Data.Core.Interfaces;
 
-namespace MarsRovers.Data.Core.Enitities
+namespace MarsRovers.Data.Core.Entities
 {
     public class RoverPosition : ICoordinates
     {

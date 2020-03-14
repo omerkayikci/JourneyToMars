@@ -1,8 +1,6 @@
-﻿using MarsRovers.Data.Core.Enitities;
+﻿using MarsRovers.Data.Core.Entities;
 using MarsRovers.Data.Core.Enums;
 using MarsRovers.Service.Interfaces;
-
-using System;
 
 namespace MarsRovers.Service
 {

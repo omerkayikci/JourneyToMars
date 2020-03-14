@@ -1,4 +1,4 @@
-﻿using MarsRovers.Data.Core.Enitities;
+﻿using MarsRovers.Data.Core.Entities;
 using System.Text;
 
 namespace MarsRovers.Extensions

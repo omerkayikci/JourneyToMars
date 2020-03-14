@@ -1,4 +1,4 @@
-﻿using MarsRovers.Data.Core.Enitities;
+﻿using MarsRovers.Data.Core.Entities;
 using MarsRovers.Data.Core.Enums;
 using MarsRovers.Extensions;
 using MarsRovers.Service;

@@ -1,6 +1,6 @@
 ﻿using MarsRovers.Data.Core.Enums;
 
-namespace MarsRovers.Data.Core.Enitities
+namespace MarsRovers.Data.Core.Entities
 {
     public class Rover
     {
